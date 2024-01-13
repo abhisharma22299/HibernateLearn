@@ -1,8 +1,22 @@
  hibernate : hibernate is a java framework that simplifies the development of java application to interact with the data base .
-             When we are in JDBC then SQL Query is written by us , this problem can semplify from the hebernate.
-             hibernate is ORM(object relational mapping ) tool : this means that the object of java class is mapped with 
-             the table of the database
-             hibernate is an open source(free), lightweight (based on -pjos(plane java objects) simple-simple java classes))
-             hibernate is non-invasive framework or lossely coupled, means it won't forces the programmers to extend/implement 
-             any class/interface
-             it is invented by Gavin King in 2001.
+            // When we are in JDBC then SQL Query is written by us , this problem can semplify from the hebernate.
+            //hibernate is ORM(object relational mapping ) tool : this means that the object of java class is mapped with 
+               the table of the database
+            //  hibernate is an open source(free), lightweight (based on -pjos(plane java objects) simple-simple java classes))
+            // hibernate is non-invasive framework or lossely coupled, means it won't forces the programmers to extend/implement 
+               any class/interface
+            // it is invented by Gavin King in 2001.
+            // Any type of application can build with hibernate framework use in build persistance logic(Spring-web ,swing application 
+             ,fx application,java web,spring boot application).
+    
+//  Traditional way to Save the Data(JDBC): in this we write the sql query manually to store 
+
+//  when we want to store the data to database then only one task we have to do ,bring that object class to  hiberate then maaping is 
+   done ,just you need to specify the rows and columns and which class is mapped with which table you have to map. 
+ // to create the hibernate project you just need to follow the serveral steps 
+    
+     // create a maven project then click on next then select the catalog(internal) - filters-(quick start)
+ 
+      // add hibernate core relocation and mysql connector j  depedency in pom.xml file 	
+       // create a xml file name (hibernate.cfg.xml)just a stanadad name we hava to follow in src/java
+ 
