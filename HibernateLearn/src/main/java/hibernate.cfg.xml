@@ -7,10 +7,12 @@
 		<property name="connection.url">jdbc:mysql://localhost:3306/myhibernate</property>
 		<property name="connection.username">root</property>
 		<property name="connection.password">Abhi@321</property>
-		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
 		<property name="hbm2ddl.auto">update</property>
 		<property name="show_sql">true</property>
-	               
-
+		<!-- for the  mapping with annation -->
+		<mapping class="com.HibernateLearn.HibernateLearn.Student" />
+   	<!-- for the  mapping with  xml files -->
+<!-- <mapping  resource="mappingFileName"    /> --> 
 	</session-factory>
 </hibernate-configuration>
