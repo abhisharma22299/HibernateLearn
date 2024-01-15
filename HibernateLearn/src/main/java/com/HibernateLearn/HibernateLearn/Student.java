@@ -1,6 +1,8 @@
 package com.HibernateLearn.HibernateLearn;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -8,7 +10,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name="MyStudentData")
 public class Student {
-//	@Genrated(value="")
+ @GeneratedValue(strategy = GenerationType.AUTO) 
 	@Id
 	private int rollnumber;
 	private String name;

@@ -21,8 +21,7 @@ public class App {
 		s1.setName("Abhi");
 		s1.setAge(10);
 		s1.setCity("Lucknow");
-		s1.setRollnumber(2);
-
+		
 		System.out.println(s1);
 
 		Session session = sf.openSession();
