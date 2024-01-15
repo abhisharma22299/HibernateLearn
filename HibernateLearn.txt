@@ -49,4 +49,4 @@ hiberante conf
 // @Transient :- it means that tell the column that not create the particular columns
 // @Temporal  :- over a date fields tell the habirnate the format in which the data needs to be saved.
 // @Lob  :        tell the hibernate that this is a large object , not a simple object
-// @OneToOne , @OneToMany , @ManyToOne,@JoinColumn etc 
+// @OneToOne , @OneToMany , @ManyToOne,@JoinColumn etc	 
