@@ -10,9 +10,10 @@
 		<property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
 		<property name="hbm2ddl.auto">update</property>
 		<property name="show_sql">true</property>
-		<!-- for the  mapping with annation -->
+		<!-- for the mapping with annoatation -->
 		<mapping class="com.HibernateLearn.HibernateLearn.Student" />
-   	<!-- for the  mapping with  xml files -->
-<!-- <mapping  resource="mappingFileName"    /> --> 
+		<mapping class="com.HibernateLearn.HibernateLearn.Address" />
+		<!-- for the mapping with xml files -->
+		<!-- <mapping resource="mappingFileName" /> -->
 	</session-factory>
-</hibernate-configuration>
+</hibernate-configuration>	
