@@ -8,16 +8,25 @@ import javax.persistence.Table;
 
 //this is use for the change the entire entity @Entity(name="Student_Details")
 @Entity
-@Table(name="MyStudentData")
+@Table(name = "MyStudentData")
 public class Student {
- @GeneratedValue(strategy = GenerationType.AUTO) 
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Id
 	private int rollnumber;
 	private String name;
 	private int Age;
-
-
+	private Certificate certi;
 	private String city;
+
+	
+	
+	public Certificate getCerti() {
+		return certi;
+	}
+
+	public void setCerti(Certificate certi) {
+		this.certi = certi;
+	}
 
 	public Student(int rollnumber, String name, int age, String city) {
 		super();
@@ -64,6 +73,7 @@ public class Student {
 	public void setCity(String city) {
 		this.city = city;
 	}
+
 	@Override
 	public String toString() {
 		return "Student [rollnumber=" + rollnumber + ", name=" + name + ", Age=" + Age + ", city=" + city + "]";

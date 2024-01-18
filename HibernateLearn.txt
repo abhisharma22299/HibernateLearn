@@ -50,3 +50,20 @@ hiberante conf
 // @Temporal  :- over a date fields tell the habirnate the format in which the data needs to be saved.
 // @Lob  :        tell the hibernate that this is a large object , not a simple object
 // @OneToOne , @OneToMany , @ManyToOne,@JoinColumn etc	 
+
+
+
+fetch the data in hibernate 
+
+get  and load
+
+get() : get method is call then its return the null value if the data is not present in the database and load method return exception
+
+get ():get method is call then the value of all the data base at id call the data come and store in the program  and in load it comes on the time of actual call the data or use of it .
+
+
+
+
+
+
+
