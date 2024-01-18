@@ -13,8 +13,9 @@
 		<!-- for the mapping with annoatation -->
 		<mapping class="com.HibernateLearn.HibernateLearn.Student" />
 		<mapping class="com.HibernateLearn.HibernateLearn.Address" />
-		<mapping class="com.mapp.Question" />
-			<mapping class="com.mapp.Answer" />
+	<mapping class="com.mapp.Question" />
+		<mapping class="com.mapp.Answer" />
+	
 		<!-- for the mapping with xml files -->
 		<!-- <mapping resource="mappingFileName" /> -->
 	</session-factory>

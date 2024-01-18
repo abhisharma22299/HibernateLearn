@@ -1,18 +1,22 @@
 package com.mapp;
 
+
+import java.util.List;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinColumns;
+import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 @Entity
 public class Question {
     @Id
 	private int questionId;
 	private String question;
-	@OneToOne
-	@JoinColumn(name="join_Id") // for rename the join columns key
-	private Answer answer;
+
+	@OneToMany(mappedBy="question")
+	private List<Answer> answers;
 
 	public int getQuestionId() {
 		return questionId;
@@ -30,30 +34,30 @@ public class Question {
 		this.question = question;
 	}
 
-	public Answer getAnswer() {
-		return answer;
-	}
-
-	public void setAnswer(Answer answer) {
-		this.answer = answer;
-	}
-
-	public Question(int questionId, String question, Answer answer) {
-		super();
-		this.questionId = questionId;
-		this.question = question;
-		this.answer = answer;
-	}
-
 	public Question() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
+	public List<Answer> getAnswers() {
+		return answers;
+	}
+
+	public void setAnswers(List<Answer> answers) {
+		this.answers = answers;
+	}
+
+	public Question(int questionId, String question, List<Answer> answers) {
+		super();
+		this.questionId = questionId;
+		this.question = question;
+		this.answers = answers;
+	}
+
 	@Override
 	public String toString() {
-		return "Question [questionId=" + questionId + ", question=" + question + ", answer=" + answer + "]";
+		return "Question [questionId=" + questionId + ", question=" + question + ", answers=" + answers + "]";
 	}
-	
+
 	
 }
