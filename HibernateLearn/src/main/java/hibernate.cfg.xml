@@ -15,7 +15,8 @@
 		<mapping class="com.HibernateLearn.HibernateLearn.Address" />
 	<mapping class="com.mapp.Question" />
 		<mapping class="com.mapp.Answer" />
-	
+	<mapping class="com.map1.Emp" />
+		<mapping class="com.map1.Project" />
 		<!-- for the mapping with xml files -->
 		<!-- <mapping resource="mappingFileName" /> -->
 	</session-factory>
