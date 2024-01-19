@@ -64,10 +64,15 @@ get ():get method is call then the value of all the data base at id call the dat
 
 
 
-Fetch type in hibernate 
+//Fetch type in hibernate 
 
 EAGER
 
 LAZY
 
 
+//Hibernate/Persistence lifecycle states
+Transient State  : when we create a new  object and set its property then it goes to transient value
+Persistent State : session .save then it come in Persistece State and data goes to database
+Detached State
+Removed State
