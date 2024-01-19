@@ -73,6 +73,7 @@ LAZY
 
 //Hibernate/Persistence lifecycle states
 Transient State  : when we create a new  object and set its property then it goes to transient value
-Persistent State : session .save then it come in Persistece State and data goes to database
-Detached State
-Removed State
+Persistent State : session .save then it come in Persistece State and data goes to database in the state then the value can change Session object hold the data
+Detached State  : session.close then it comes to detached state . Any change in the values of the object could'nt reflect into the data base.
+                   Session object could'nt hold the data
+Removed State   :  session.delete function remove data from the database
