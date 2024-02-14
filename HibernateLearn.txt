@@ -1,4 +1,4 @@
- hibernate : hibernate is a java framework that simplifies the development of java application to interact with the data base .
+/// hibernate : hibernate is a java framework that simplifies the development of java application to interact with the data base .
             // When we are in JDBC then SQL Query is written by us , this problem can semplify from the hebernate.
             //hibernate is ORM(object relational mapping ) tool : this means that the object of java class is mapped with 
                the table of the database
