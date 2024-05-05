@@ -82,9 +82,9 @@ get ():get method is call then the value of all the data base at id call the dat
 
 //Fetch type in hibernate 
 
-EAGER : 
+EAGER : active fetching 
 
-LAZY : lazyas
+LAZY : lazy fetching 
 
 
 //Hibernate/Persistence lifecycle states
