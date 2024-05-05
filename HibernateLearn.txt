@@ -82,9 +82,10 @@ get ():get method is call then the value of all the data base at id call the dat
 
 //Fetch type in hibernate 
 
-EAGER : active fetching 
+EAGER : It is a design pattern in which loading occurs on the spot.
+	
 
-LAZY : lazy fetching 
+LAZY : In Lazy loading ,associated data loads only when we explicity call getter or size method .
 
 
 //Hibernate/Persistence lifecycle states
