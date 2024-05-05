@@ -1,4 +1,12 @@
-/// hibernate : hibernate is a java framework that simplifies the development of java application to interact with the data base .
+// why maven project 
+* maven is a powerful project management tool that is based on POM (Project Object Model).
+* is we not create a maven project then we have to add jar file manually and no need to downaload it . secondaly we have to create jar and war file to deploy . maven project can create automatically 
+// problem without maven -> creating the right project structure .->adding set of jars in each project.->building and deploying the project.
+// what maven provides. builds, documentation , dependencies,releases,
+
+
+
+// hibernate : hibernate is a java framework that simplifies the development of java application to interact with the data base .
             // When we are in JDBC then SQL Query is written by us , this problem can semplify from the hebernate.
             //hibernate is ORM(object relational mapping ) tool : this means that the object of java class is mapped with 
                the table of the database
@@ -9,6 +17,10 @@
             // Any type of application can build with hibernate framework use in build persistance logic(Spring-web ,swing application 
              ,fx application,java web,spring boot application).
     
+
+
+
+// 
 //  Traditional way to Save the Data(JDBC): in this we write the sql query manually to store 
 
 //  when we want to store the data to database then only one task we have to do ,bring that object class to  hiberate then maaping is 
@@ -24,6 +36,10 @@
             check box  of downlad repo and java doc artifact
   
 //
+
+
+// how to create a hibernate project 
+-> to create a hibernate project firstly we have to create a mavan project then catalog internal  the filter is quick start 	
 hiberante conf 
 
 <?xml version='1.0' encoding='utf-8'?>
@@ -77,3 +93,4 @@ Persistent State : session .save then it come in Persistece State and data goes 
 Detached State  : session.close then it comes to detached state . Any change in the values of the object could'nt reflect into the data base.
                    Session object could'nt hold the data
 Removed State   :  session.delete function remove data from the database
+
