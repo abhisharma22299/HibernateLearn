@@ -94,4 +94,12 @@ Persistent State : session .save then it come in Persistece State and data goes 
 Detached State  : session.close then it comes to detached state . Any change in the values of the object could'nt reflect into the data base.
                    Session object could'nt hold the data
 Removed State   :  session.delete function remove data from the database
+ 
+
+// HQL (Hibernate Query Language )
+by get method we only get those row data which we know the id of the row
+how to load complex data just like you have to match the username column and as well as password field .this can be store in multiple data in the database 
+
+hql : database independent , easy to learn for programmer 
+sql : database dependent , esay to learn for DBA
 
