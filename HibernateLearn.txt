@@ -84,7 +84,7 @@ get ():get method is call then the value of all the data base at id call the dat
 
 EAGER : 
 
-LAZY : lazy
+LAZY : lazyas
 
 
 //Hibernate/Persistence lifecycle states
