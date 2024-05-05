@@ -101,5 +101,21 @@ by get method we only get those row data which we know the id of the row
 how to load complex data just like you have to match the username column and as well as password field .this can be store in multiple data in the database 
 
 hql : database independent , easy to learn for programmer 
-sql : database dependent , esay to learn for DBA
+sql : database dependent , esay to learn for DBA(DataBase Adminstrator ) 
 
+String quer ="from student  ";
+
+String quer ="from student where city= 'lucknow '";
+String quer ="from student where city=: x";
+String quer ="from student where city=: x";
+q.setParameter("x","LUCKNOW");
+String q="from student as s where s.city =:x and s.name=:n";
+q.setPatamerter("x","lucknow");
+q.setPatamerter("n","peter");
+Query q=s.createQuery();
+// single result 
+
+// mutiple result 
+List<Student> list =q.list();
+for(Student std:list){
+sop(std.getName());
