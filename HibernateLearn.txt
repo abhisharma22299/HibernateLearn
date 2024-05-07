@@ -112,10 +112,56 @@ q.setParameter("x","LUCKNOW");
 String q="from student as s where s.city =:x and s.name=:n";
 q.setPatamerter("x","lucknow");
 q.setPatamerter("n","peter");
-Query q=s.createQuery();
+Query q=s.createQuery(Query);
 // single result 
 
 // mutiple result 
 List<Student> list =q.list();
 for(Student std:list){
 sop(std.getName());
+}
+
+// delte hql query
+s.createQuery("delte from student  ");
+
+s.createQuery("delte from student where city='lucknow'");
+s.createQuery("delte from student s where city='lucknow'");
+Query q2=s.createQuery("delte from student as  s where s.city=:c");
+q2.executeUpdate();
+
+// update hql wuery
+Transaction tx=s.openSession();
+Query q2=s.createQuery("update student set ciy=:c where name =:n");
+q2.setParameter("c","delhi");
+q2.setParameter("n","peter");
+tx.commit();
+
+// join hql
+
+s.createQuery("select q.question , q.questionId,a.answerId from Question q as q INNER JOIN q.answers as a ");
+
+// pagination is process by we can deside how much we need data at a time 
+session s=factory.openSession();
+Query query=s.createQuery("from student");
+query.setFirstResult(0);
+query.setMaxResults(5);
+
+List<student> list=query.list();
+for(student st:list){
+sop(st.getName());
+}
+
+
+// sql query in hibernate 
+String q="select * from student ";
+NativeQuery nq=s.createSQLQuery(q);// it will resutn the native query object// contrl 1 // NativeQuery nq=
+List<Object[]> list=nq.list();
+for(object[] st: list ){
+sop(Arrays.deepToString(student	));	
+}
+
+// cascading 
+ it use for save all the related entity save autimatically in the table and also delte the entity from the table (cascade=cascadeTypes.ALL)
+
+// caching 
+Caching is a mechanism to enhance the performance of the application
