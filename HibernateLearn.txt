@@ -167,4 +167,6 @@ sop(Arrays.deepToString(student	));
 Caching is a mechanism to enhance the performance of the application
 caching is use to reduce the number of database queries
 
-// Hibernate Caching have mainy 2 type first level caching (Session object) , second level caching (Session Factory)
+// Hibernate Caching have mainy 2 type first level caching (Session object)in hibernate it provide by default no need of any configuration , second level caching (Session Factory) manually configutaion
+example for first 	level caching Session s factory.openSession();
+ Student s=s.get(Student.class,1212);,,Student s1=s.get(Student.class,1212);,it get only one object
