@@ -169,4 +169,10 @@ caching is use to reduce the number of database queries
 
 // Hibernate Caching have mainy 2 type first level caching (Session object)in hibernate it provide by default no need of any configuration , second level caching (Session Factory) manually configutaion
 example for first 	level caching Session s factory.openSession();
- Student s=s.get(Student.class,1212);,,Student s1=s.get(Student.class,1212);,it get only one object
+ Student s=s.get(Student.class,1212);,,Student s1=s.get(Student.class,1212);,it get only one object ,to check the session contain any obj you can check from s.contains(student1);it will return true or false .it will btween s.close();open sesoin
+-> to use second level cache , chache provider are eh cahe , os cache  , to use second level cache you just need to add the jar file in the pom.xml file ,sear ehcache maven ,hibernate cache maven  	,and after adding the dependices go to hibenate cnf file and
+ <property name="cache.use_second_level_cache ">true</property> and tell the cache second level class <property name="cache.region.factory_class">org.hibernate.cache.enhance.internal.EncacheRegionFactory</property>, @Entity ,@Cacheable ,@Cache(usage=CacheConcurrencyStrategy.READ_ONLY)
+
+
+// Hibernate XML Mapping with using of @Entity
+name of the file is Student.hbm.xml 
