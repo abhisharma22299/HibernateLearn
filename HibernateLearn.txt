@@ -165,3 +165,4 @@ sop(Arrays.deepToString(student	));
 
 // caching 
 Caching is a mechanism to enhance the performance of the application
+caching is use to reduce the number of database queries
