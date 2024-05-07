@@ -176,3 +176,17 @@ example for first 	level caching Session s factory.openSession();
 
 // Hibernate XML Mapping with using of @Entity
 name of the file is Student.hbm.xml 
+<class name="Student"><property name="name" column=name> </class>
+create hib cng file and add the ddt after that <Hibernate-mapping >
+ <class name="well qulified class name" table="person">
+<id name="id" column="person_id">
+<generator class="native"></generator>
+</id>
+</class>
+
+after that you need the configure in the hibernate.cnf.xml file by <mapping resource="well qulifieed name"/>
+
+Hibernate Criteria API :- it use to data fetch from the database this is the third method by which we can get the data from the databases 
+Criteria c =session.createCriteria(Student.class);
+// for restirction c.add(Restrictions.eq("certi.course ","Andoride"));
+List<student> list=c.list();
