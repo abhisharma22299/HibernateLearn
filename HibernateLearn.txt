@@ -164,4 +164,4 @@ sop(Arrays.deepToString(student	));
  it use for save all the related entity save autimatically in the table and also delte the entity from the table (cascade=cascadeTypes.ALL)
 
 // caching 
-Caching is a mechanism to enhance the performance of the applicationas
+Caching is a mechanism to enhance the performance of the application
